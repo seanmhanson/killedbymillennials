@@ -35,7 +35,9 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  width: 50px;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   background-color: #012;
@@ -45,10 +47,12 @@ body {
   line-height: 14px;
 }
 
+.splash-icon {
+  margin-right: 4px;
+}
+
 .splash-link {
   color: #a69d9d;
-  display: flex;
-  justify-content: space-between;
   text-decoration: none;
 }
 
