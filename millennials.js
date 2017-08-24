@@ -350,7 +350,16 @@ function reload() {
   document.getElementById("placeholder").innerHTML = answer;
 }
 
+function about() {
+  document.getElementById("about-overlay").classList.remove('about-overlay-is-hidden');
+  document.getElementById("about-overlay").onclick = function () {
+    document.getElementById("about-overlay").classList.add('about-overlay-is-hidden');
+    document.getElementById("about-overlay").onclick = null;
+  };
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   reload();
   document.getElementById("reload").onclick = reload;
+  document.getElementById("about").onclick = about;
 });
